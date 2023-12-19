@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Easy-Manage Documentation</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" class="logo"> Easy Manage </a>
+      <ul class="navigation-links">
+        <li>
+          <a href="#getting-started" data-scroll="getting-started">
+            <i class="fas fa-folder-open folder-icon"></i>
+            Getting Started
+          </a>
+        </li>
+        <li>
+          <a href="#info" data-scroll="info">
+            <i class="fas fa-info-circle info-icon"></i>
+            Template Info
+          </a>
+        </li>
+        <li>
+          <a href="#customization" data-scroll="customization">
+            <i class="fas fa-exchange-alt cust-icon"></i>
+            Customization
+          </a>
+        </li>
+        <li>
+          <a href="#backend-integration" data-scroll="backend-integration">
+            <i class="fas fa-database"></i>
+            Backend Integration
+          </a>
+        </li>
+        <li>
+          <a href="#uploading" data-scroll="uploading">
+            <i class="fas fa-file-upload upload-icon"></i>
+            Uploading
+          </a>
+        </li>
+        <li>
+          <a href="#credits" data-scroll="credits">
+            <i class="fab fa-sourcetree source-icon"></i>
+            Sources & Credits
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="start">
+      <h1>Easy Manage - manage your project easy</h1>
+      <div class="author-info">
+        <ul>
+          <li><b>Name: </b>AvailableCoder</li>
+          <li><b>Created: </b>07 / 02 / 2023</li>
+          <li><b>Version: </b>1.0</li>
+          <li><b>Latest update: </b>07 / 02 / 2023</li>
+        </ul>
+
+        <p>
+          Thanks for purchasing the product. We hope you like the product and
+          help you develop your project and achieve your ambitions.
+        </p>
+        <p>
+          Do not hesitate to contact us if you encounter any problems with the
+          product.
+        </p>
+        <a
+          class="contact-btn"
+          href="https://www.codester.com/AvailableCoder/"
+          target="_blank"
+          >Contact</a
+        >
+      </div>
+    </section>
+    <section class="getting-started section-padding" id="getting-started">
+      <h2>Getting Started</h2>
+      <p>
+        Easy Manage is a React app for managing tasks of a certain project, it
+        comes with a beautiful user interface and tools that will help you
+        manage your project easily.
+      </p>
+      <br />
+      <h3>Recuirments</h3>
+      <p>
+        Make sure you have <b>nodejs</b> and <b>npm</b> installed in your device
+      </p>
+      <p>
+        You can check for them after installation by writing npm -v and node -v
+        in the cmd
+      </p>
+      <a href="https://nodejs.org/en/">install node</a>
+      <p class="cmd-text">
+        npm -v <br />
+        9.1.3 &nbsp; &nbsp; &nbsp;<i>npm version we used</i> <br /><br />
+        node -v <br />
+        v18.12.1 &nbsp; &nbsp; <i>nodejs version we used</i>
+      </p>
+      <br />
+      <h3>Install npm Packages</h3>
+      <p>
+        Open App folder directory (<b>main_file/easy-manage</b>) by a code
+        editor like vscode and write in the terminal <i>npm install</i> to
+        install template packages
+      </p>
+      <p class="cmd-text">npm install</p>
+      <br />
+      <h3>Development server</h3>
+      <p>
+        After instalation your can run <i>npm run dev</i> command to see the
+        website alive (http://localhost:5173/easy-manage)
+      </p>
+      <p class="cmd-text">npm run dev</p>
+    </section>
+
+    <section class="info section-padding" id="info">
+      <h2>App Information</h2>
+      <p></p>
+      <p>Font Used</p>
+      <p style="padding-left: 15px">
+        Main font used in the Application :
+        <a href="https://fontsource.org/fonts/montserrat" target="_blank"
+          >Montserrat</a
+        >
+      </p>
+      <p>
+        UI is build with
+        <a href="https://mui.com/" target="_blank">mui</a> v5.11.6
+      </p>
+      <p>
+        Icons used are from google
+        <a
+          href="https://mui.com/material-ui/material-icons/#main-content"
+          target="_blank"
+          >Material Icons</a
+        >
+      </p>
+    </section>
+
+    <section class="customization section-padding" id="customization">
+      <h2>Customization</h2>
+      <br />
+      <h3>Page Title</h3>
+      <img src="images/title-coustomize.jpg" alt="page title" />
+      <br /><br /><br />
+      <h3>Favicon</h3>
+      <img src="images/favicon-coustomize.jpg" alt="favicon" />
+      <br /><br /><br />
+
+      <h3>Changing Data</h3>
+      <p>
+        You can change the data used in the template (tasks, team) by changing
+        JSON files existing in the data folder. <br />
+        goto (<b>src/data/team.json</b>)<br /><br />
+      </p>
+
+      <h4>Changing Team Members</h4>
+      <p>Here you will find team information used in the Application</p>
+      <br />
+      <img src="images/team-member-info.jpg" alt="team member" />
+      <br /><br />
+      <p>
+        If you want to add a new member you should add it with the values that
+        match the following types. <br />
+        i.e: This is Member Schema
+      </p>
+      <div class="code-written">
+        <div>{</div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;id&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span>,
+          <span style="color: #777"> => unique identifer string</span>
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;name&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span>,
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;job&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">Jops</span>,<span
+            style="color: #777">
+            => (Jobs type in types folder)</span
+          >
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;image&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span
+          ><span style="color: #777"> => (image link)</span>
+        </div>
+        <div>}</div>
+      </div>
+      <br />
+      <p>
+        I know you may get confused about {Jops} type and what value you can put
+        in it, we will discuss it now.
+      </p>
+      <p>
+        Since we are using typescript type checking is required, we made some
+        jobs that are existed in the application and if the JSON file provides
+        another job name not included in the Jobs type this may cause an error,
+        let's have an example.
+      </p>
+      <img src="images/Jobs-type.jpg" alt="Jobs type" />
+      <p>
+        as you can see in the image there are four types of jobs we used, if you
+        want to add ned job you can simply add it { ... | "new job"} as its
+        clear in the image
+      </p>
+      <br /><br />
+
+      <h4>Changing Tasks</h4>
+      <p class="note-text">
+        Tasks that existed in the tasks.json file are fetched when there are no
+        tasks in localstorage. <br />
+        When you use the application and add tasks yourself the data in the
+        tasks.json file will not be called when the localstorage already has
+        tasks. <br />
+        If you want to integrate backend API you should understand this part
+        well. <br />
+        If you will use his application as it's you can cancel this part.
+      </p>
+      <p>Here you will find team information used in the Application</p>
+      <br />
+      <img src="images/tasks-info.jpg" alt="team member" />
+      <br /><br />
+      <p>
+        Here are the types of keys you can use to add new tasks <br />
+        i.e: This is Task Schema
+      </p>
+      <div class="code-written">
+        <div>{</div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;id&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span>,
+          <span style="color: #777"> => unique identifer string</span>
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;title&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span>,
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;type&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">TaskTypes</span>,
+          <span style="color: #777">
+            => TaskTypes is existed in types folder as we said in Jobs
+            type</span
+          >
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;description&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string</span>,
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;developers&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">string[]</span>,
+          <span style="color: #777"> => Array of different members id</span>
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;estimatedTime&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">number</span>,
+          <span style="color: #777">
+            => number of seconds to finish the task (will be converted to
+            days)</span
+          >
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;startingTime&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">number</span>,
+          <span style="color: #777">
+            [not existed in todo type task] => date of starting the task
+            expressed by seconds</span
+          >
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;endingTime&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">number</span>,
+          <span style="color: #777">
+            => [existed in done type task] => date of ending the task expressed
+            by seconds</span
+          >
+        </div>
+        <div>
+          &nbsp;
+          <span style="color: #ffcc00">&quot;rating&quot;</span>:
+          <span style="color: #c3e88d; font-style: italic">Rating</span>,
+          <span style="color: #777">
+            => a number expressed the rate of task</span
+          >
+        </div>
+
+        <div>}</div>
+      </div>
+      <p>
+        We used three types of tasks for our application as is clear in the app
+        <br />
+        &nbsp; &nbsp;<b>todo tasks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b>: that
+        are planned to be done but not in working
+        <br />
+        &nbsp; &nbsp;<b>progress tasks </b>: tasks that are in the working area
+
+        <br />
+        &nbsp; &nbsp;<b>done tasks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b>: tasks
+        that are completed
+        <br />
+      </p>
+      <br />
+      <p>
+        rating is a number (0, ∞) which determines the review of the state of
+        the task<br />
+        &nbsp; &nbsp;<b>r < 1</b>: task takes more time to be completed than
+        estimated time (bad rate) <br />
+        &nbsp; &nbsp;<b>r = 1</b>: task takes the exact same time as estimated
+        time (normal rate)
+        <br />
+        &nbsp; &nbsp;<b>r > 1</b>: task completed in less time than estimated
+        time (good rate)
+        <br />
+      </p>
+      <img src="images/task-types.jpg" alt="team member" />
+    </section>
+    <section
+      class="backend-integration section-padding"
+      id="backend-integration">
+      <h2>Backend Integration</h2>
+      <p>
+        If you want to integrate backend API and use it as a full-stack web app
+        it's easy but you should take some points into consideration
+      </p>
+      <ul style="padding: 10px 30px; list-style-type: disc">
+        <li>
+          You should provide Shemas matches with the app data (tasks and team),
+          <i>We discussed this in coustomization</i>
+        </li>
+        <li>
+          Make API routes matches all process done to tasks (CRUD Operations)
+        </li>
+        <li>Fetch API routes beside redux state management reducers</li>
+      </ul>
+      <p>
+        In the app/index.tsx file you will find how to grab the data from our
+        data folder or from localstorage and we put comments to make the process
+        clear for you if you want to make an edit.
+      </p>
+      <img src="images/first-fetch.jpg" alt="first fetch" />
+      <p>
+        You will add the fetch requests to your API and save the data in redux
+        store as it is written
+      </p>
+      <p>
+        When operating on tasks such as adding, updating or deleting the update
+        take place in two places which are local storage and redux state
+        management <br />
+        You will have to fetch your API request also to update the data in your
+        database after changing it locally
+      </p>
+      <p>
+        Updating state takes place via dispatch function, we have four different
+        functions to change out tasks as its in tasksSlice.tsx file <br />
+        You will have to fetch API requests with the same functionality as the
+        dispatch function called, to update your database too.
+      </p>
+      <img src="images/operations-on-tasks.jpg" alt="operation" />
+    </section>
+
+    <section class="uploading section-padding" id="uploading">
+      <h2>Uploading to the Server</h2>
+      <p>
+        Once you finised coustomization and want to upload the website to the
+        internet you can do the following steps
+      </p>
+      <p>
+        <strong>Note:</strong> you need to do some changes before building
+        Template
+      </p>
+      <ul style="padding-left: 32px">
+        <li>
+          <b>-></b> Change the homepage property to your website link from
+          <i>package.json</i> file
+        </li>
+        <li>
+          <b>-></b> You need to change the route basename if you changed the
+          directory of the website (<b>easy-manage</b>)
+          <br />
+          <img src="images/build-1.jpg" alt="build2" /><br />
+        </li>
+        <li>
+          <b>-></b> Goto <u>src/app/index.tsx</u> and change
+          <b>easy-manage</b> to the directory you wrote before in the
+          package.json <br />
+          <i>If there is no directory then make the base name equals{/}</i>
+          <br />
+          <img src="images/build-2.jpg" alt="route-path-1" />
+          <br />
+        </li>
+      </ul>
+      <p>After this write <i>npm run build</i> in the cmd</p>
+      <p class="cmd-text">npm run build</p>
+      <p>
+        You will find <b>build</b> folder created and this folder is the folder
+        you will upload to your hosting server
+        <img src="images/build-3.jpg" alt="build1" />
+      </p>
+      <br />
+
+      <p>
+        <b> <u> In case of private shared hosing</u></b> <br />
+        Make folder in public_html named by the same name of the directory you
+        make in package.json file and extract dist files in it Note: dont put
+        the dist folder itself put the files inside it in the folder you created
+      </p>
+      <br />
+      <p>
+        <b><u>Note</u></b> <br />
+        Uploading to server differes from on provider to another and you may
+        need to do more modifications to the app before building it to be ready
+        to be uploaded so we will leave a guide from vite documentation on how
+        to upload on different providers.
+      </p>
+      <br />
+      <p>
+        <a href="https://vitejs.dev/guide/static-deploy.html" target="_blank"
+          >Deploying a Static Site | Vite</a
+        >
+      </p>
+      <br />
+      <p class="note-text">
+        You may face some difficulies when uploading website even us as a
+        devolopers faced problems in the first uploading, If you faced a problem
+        in this step you can ask a developer to upload it for you.<br />
+      </p>
+    </section>
+
+    <section class="credits" id="credits">
+      <h2>Sources & Credits</h2>
+      <div class="main-grid">
+        <div class="box">
+          <h4>
+            <a href="https://fontsource.org/fonts/montserrat" target="_blank"
+              >Font</a
+            >
+          </h4>
+          <span class="short-des">[Font source]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://www.flaticon.com/" target="_blank">Flaticon</a>
+          </h4>
+          <span class="short-des">[Vector images source]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://redux.js.org/" target="_blank">Redux</a>
+          </h4>
+          <span class="short-des">[State managment]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://mui.com/" target="_blank">MUI</a>
+          </h4>
+          <span class="short-des">[UI Framework]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://reactrouter.com/" target="_blank">React Router</a>
+          </h4>
+          <span class="short-des">[Routing Between pages]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://testing-library.com/" target="_blank"
+              >testing-library</a
+            >
+          </h4>
+          <span class="short-des">[React Testing Lib]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://jestjs.io/" target="_blank">Jest</a>
+          </h4>
+          <span class="short-des">[Javascript testing]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://day.js.org/" target="_blank">Dayjs</a>
+          </h4>
+          <span class="short-des">[Date formatter]</span>
+        </div>
+        <div class="box">
+          <h4>
+            <a href="https://date-fns.org/" target="_blank">date-fns</a>
+          </h4>
+          <span class="short-des">[Date formatter]</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy;2023 Easy-Manage, All Right Reserved.</footer>
+
+    <!-- JS Files -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
